@@ -12,6 +12,7 @@ PKGS=`go list ${TEST_PKGS} 2> /dev/null | \
                                                   grep -v /vendor/ | \
                                                   grep -v /build/ | \
                                                   grep -v /bddtests/ | \
+                                                  grep -v /test/ | \
                                                   grep -v /examples/chaincode/chaintool/ | \
                                                   grep -v /examples/chaincode/go/asset_management | \
                                                   grep -v /examples/chaincode/go/utxo | \
